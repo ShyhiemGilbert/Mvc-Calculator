@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Calculate Page";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calculator</title>
+</head>
+<body>
+    <div>
+
+        <form class="w3-container" action="Total" method="post">
+            Value 1
+            <input class="w3-input w3-border" type="text" name="value1"/>
+
+
+            <br />
+            <div class="w3-row-padding">
+                 <div class="w3-third">
+                <input class="w3-input w3-border"  type="Radio" name="calci" value="+" /> Add
+                </div>
+                <div class="w3-third">
+                    <input class="w3-input w3-border"  type="Radio" name="calci" value="-" /> Subtract <br />
+                </div>
+                <div class="w3-third">
+                    <input class="w3-input w3-border"  type="Radio" name="calci" value="*" /> Multiply <br />
+                </div>
+                <div class="w3-third">
+                    <input class="w3-input w3-border"  type="Radio" name="calci" value="/" /> Divide <br />
+                </div>
+                @*<div class="w3-third">
+                    <input class="w3-input w3-border"  type="Radio" name="calci" value="^" /> Exponent Power <br />
+                </div>
+                <div class="w3-third">
+                    <input class="w3-input w3-border"  type="Radio" name="calci" value="%" /> Remainder <br />
+                </div>*@
+               </div>
+            <br />
+            Value 2
+            <input class="w3-input w3-border" type="text" name="value2" />
+
+            <input type="submit" value="count"/>
+        </form>
+    </div>
+</body>
+</html>
